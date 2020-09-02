@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://liveweave.com/WRwcw6 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Liveweave</title>    <meta name="description" content="Liveweave is a HTML, CSS &amp; JavaScript playground for web designers and developers">
+    <meta name="keywords" content="HTML, HTML5, CSS, CSS3, JavaScript, jquery, jquery UI, web designer, designer, web developer, developer">
+    <meta name="author" content="Amit Sen">
+    
+
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive -->
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./El sitio más feo_files/code-completion.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/lint.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/show-hint.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/eclipse.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/tomorrow-night-eighties.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/tern-extension.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/show-hint-eclipse.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/show-context-info.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/templates-hint.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/lint(1).css">
+    <link rel="stylesheet" href="./El sitio más feo_files/codemirror.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/style.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/dropit.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/code-completion(1).css">
+    <link rel="stylesheet" href="./El sitio más feo_files/style-menu.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/tipTip.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/jqx.base.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/alertify.core.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/alertify.default.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/alertify.bootstrap.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/responsive.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/css" type="text/css">
+    <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inconsolata:400' type='text/css'> -->
+    <link rel="stylesheet" href="./El sitio más feo_files/css(1)" type="text/css">
+    <link rel="stylesheet" href="./El sitio más feo_files/vscode-dark.css">
+    <!-- <link rel="stylesheet" href="theme/tomorrow-night-eighties.css"> -->
+    <!-- <link rel="stylesheet" href="theme/monokai.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="./El sitio más feo_files/component.css">
+    <link rel="stylesheet" href="./El sitio más feo_files/style(1).css">  <!-- Always the last stylesheet -->
+    <link rel="shortcut icon" href="https://liveweave.com/images/favicon.svg?1599057353">
+
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        @font-face {
+            font-family: Menlo;
+            src: url('fonts/Menlo.woff');
+        }
+
+        @font-face {
+            font-family: Monaco;
+            src: url('fonts/Monaco.woff');
+        }
+
+        .CodeMirror-gutters {
+            background: none;
+            background: #333;
+            border: none;
+        }
+
+        .CodeMirror {
+            width: 100%;
+            /* font-family: Inconsolata, Consola, Monaco, Courier, monospace; */
+            font-family: Menlo, Monaco, "Courier New", monospace !important;
+            font-size: 14px;
+            line-height: 1.4rem;
+            cursor: default !important;
+        }
+
+        .CodeMirror-gutters {
+            padding: 0 7px;
+            min-width: 20px;
+            text-align: right;
+            background: none;
+            border: none;
+        }
+
+        .CodeMirror-scroll {
+            cursor: default;
+        }
+    
+
+    </style>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" async="" src="./El sitio más feo_files/ga.js.descarga"></script><script type="text/javascript" src="./El sitio más feo_files/jquery.min.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/jquery-ui.min.js.descarga"></script>
+
+    <script type="text/javascript" src="./El sitio más feo_files/beautify.min.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/beautify-css.min.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/beautify-html.min.js.descarga"></script>
+
+    <script type="text/javascript" src="./El sitio más feo_files/jszip.min.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/codemirror.js.descarga"></script>
+    
+    <script type="text/javascript" src="./El sitio más feo_files/pophtmlmixed.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/poptags.js.descarga"></script>
+
+    <script type="text/javascript" src="./El sitio más feo_files/code-completion.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/css-completion.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/html-completion.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/lint.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/show-hint.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/closetag.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/closebrackets.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/matchbrackets.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/runmode.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/javascript.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/jshint-r12-80277ef.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/lint.js.descarga"></script>
+
+    <!-- This is JavaScript Lint file. Does not work with ES6 keywords -->
+    <!-- <script type="text/javascript" src="hint/js/javascript-lint.js"></script> -->
+
+    <script type="text/javascript" src="./El sitio más feo_files/acorn.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/acorn_loose.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/walk.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/signal.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/tern.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/def.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/comment.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/infer.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/tern.js(1).descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/tern-extension.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/ecma5.json.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/jquery.json.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/browser.json.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/keywords.json.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/show-context-info.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/templates-hint.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/javascript-templates.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/lint.js(1).descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/css-lint.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/csslint.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/jquery.generateFile.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/script.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/iphone-style-checkboxes.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/jquery.history.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/emmet.min.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/jquery.tipTip.minified.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/jqxcore.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/jqxsplitter.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/gettheme.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/dropit.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/jshint.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/alertify.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/browser-detect.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/mousetrap.min.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/rulez.min.js.descarga"></script>
+    <!-- 
+    Important: These script "mode" files should loaded near the last. 
+    The JavaScript ES6 keywords do not work if the "javascript.js" file is loaded before the TernJS files.
+    New JavaScript keywords should be added to "mode/javascript/javascript.js" and "hint/js/ternjs/defs/keywords.json.js" files.
+     -->
+    <script type="text/javascript" src="./El sitio más feo_files/xml.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/css.js.descarga"></script>
+    <script type="text/javascript" src="./El sitio más feo_files/javascript.js(1).descarga"></script>
+    <script type="text/javascript">
+        TogetherJSConfig_siteName = "Liveweave";
+        TogetherJSConfig_toolName = "TeamUp";
+        TogetherJSConfig_hubBase = "https://liveweave-teamup-hub.glitch.me/";
+    </script>
+    <script type="text/javascript" src="./El sitio más feo_files/weave.script.js.descarga"></script>
+
+    <script type="text/javascript">
+
+        // Initialize
+        $(window).load(function () {
+            renderPreview();
+            $('.tools-menu').dropit();
+            $("#js-errors").hide();
+            $("#footer-message").show();
+            alertify.set({delay: 2000});
+        });
+    </script>
+
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30660734-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+</head>
+
+
+<body tabindex="0">
+
+<div id="splashscreen" style="display: none;">
+    <div class="load-container">
+        <p class="loader-text">Initializing...</p>
+    </div>
+</div>
+
+<div class="header">
+        <!-- Left-side header -->
+        <ul id="header-menu">
+            <li><a><span id="logo" title="Start a new weave"></span></a></li>
+        </ul>
+
+        <!-- Right-side header -->
+        <div id="login-mode">
+            
+                <a href="https://liveweave.com/user/dashboard.php?page=1&amp;type=list"><span class="log-in" title="Login &amp; Register"></span></a>
+
+                        <div id="toggle-night-vision">
+                <div class="night-vision-text"></div>
+                <div class="theme sticky-scroll-switch night-vision" title="Switch theme">
+                    <div class="iPhoneCheckContainer" style="width: 67px;"><input type="checkbox" id="night-vision" checked="checked"><label class="iPhoneCheckLabelOff" style="width: 62px;">
+  <span style="margin-right: -35px;">off</span>
+</label><label class="iPhoneCheckLabelOn" style="width: 39px;">
+  <span>on</span>
+</label><div class="iPhoneCheckHandle" style="width: 26px; left: 35px;">
+  <div class="iPhoneCheckHandleRight">
+    <div class="iPhoneCheckHandleCenter"></div>
+  </div>
+</div></div>
+                </div>
+            </div>
+            <div id="toggle-live-mode">
+                <div class="live-mode-text"></div>
+                <div class="onchange sticky-scroll-switch" title="Toggle &#39;Live mode&#39; (auto-run)">
+                    <div class="iPhoneCheckContainer" style="width: 67px;"><input type="checkbox" checked="checked" id="auto-run"><label class="iPhoneCheckLabelOff" style="width: 62px;">
+  <span style="margin-right: -35px;">off</span>
+</label><label class="iPhoneCheckLabelOn" style="width: 39px;">
+  <span>on</span>
+</label><div class="iPhoneCheckHandle" style="width: 26px; left: 35px;">
+  <div class="iPhoneCheckHandleRight">
+    <div class="iPhoneCheckHandleCenter"></div>
+  </div>
+</div></div>
+                </div>
+                <a href="javascript:renderPreview()" id="run" style="display: none;"><span class="run" title="Run your code manually, when &#39;Live mode&#39; is off"></span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools menu -->
+    <ul class="tools-menu dropit" style="position:relative;top:0;left:167px; width:115px;height:42px; list-style-type:none;" title="Additional features">
+        <li class="dropit-trigger">
+            <a href="javascript:void(0)" id="tools"><span class="pos-tools-menu"></span></a>
+            <ul style="width: 300px; padding: 20px; margin-top: 1px; list-style-type: none; background: white; color: rgb(119, 119, 119); display: none;" class="field-shadow dropit-submenu">
+                <li><i class="fa fa-code"></i>&nbsp;&nbsp;Template</li>
+                <li><a id="load-template">Load basic template ("Hello Weaver!")</a>&nbsp;&nbsp;<br><br></li>
+
+                <li><i class="fa fa-download"></i>&nbsp;&nbsp;Download</li>
+                <li><a href="javascript:void(0)" id="download">Download this weave as a single HTML file</a>&nbsp;&nbsp;
+                </li>
+                <li><a style="cursor:pointer;" id="download-zip">Download this weave as a .ZIP file</a> <span class="tools-shortcut">^ D</span> &nbsp; <span class="tools-shortcut">⌘ D</span><br><br></li>
+                <li><i class="fa fa-terminal"></i>&nbsp;&nbsp;JavaScript Console</li>
+                <li><a href="javascript:void(0)" id="js-console">JavaScript console/terminal playground</a>&nbsp;&nbsp;<br><br>
+                </li>
+                <li><i class="fa fa-cogs"></i>&nbsp;&nbsp;Placeholder</li>
+                <li><a href="javascript:void(0)" id="generator-ipsum">Insert "Lorem ipsum..." at cursor location</a>&nbsp;&nbsp;<br><br>
+                </li>
+
+                <li><i class="fa fa-indent"></i>&nbsp;&nbsp;Tidy &amp; Format</li>
+                <li><a href="javascript:void(0)" id="code-format-html">Tidy and format HTML-only</a></li>
+                <li><a href="javascript:void(0)" id="code-format-css">Tidy and format CSS-only</a></li>
+                <li><a href="javascript:void(0)" id="code-format-js">Tidy and format JS-only</a></li>
+                <li><a href="javascript:void(0)" id="code-format-all">Tidy and format all (HTML+CSS+JS)</a></li>
+        
+            </ul>
+        </li>
+    </ul>
+
+    <!-- JavaScript menu -->
+    <div id="js-menu">
+        <ul id="ldd-menu" class="ldd-menu">
+            <li>
+                <span class="menu-item" title="Select a CSS or JavaScript library" style="width: 75px;">&nbsp;</span>
+
+                <div class="ldd-submenu field-shadow" style="margin-top: 7px; display: none;">
+                    <ul style="border-left:none;">
+                        <li class="ldd-heading">A</li>
+                        <li id="animatecss"><a>Animate CSS (3.7.0)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">B</li>
+                        <li id="bootstrap"><a>Bootstrap (latest)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">C</li>
+                        <li id="create"><a>Create JS (latest)</a></li>
+                        <li id="chart"><a>Chart JS (1.0.2)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">D</li>
+                        <li id="d3"><a>D3 (3.0)</a></li>
+                        <li id="dojo"><a>Dojo (latest)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading no-border">E</li>
+                        <li id="ember"><a>Ember JS (latest)</a></li>
+                        <li id="enyo"><a>Enyo JS (latest)</a></li>
+                        <li id="ext"><a>Ext JS (4.2.0)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">F</li>
+                        <li id="fabric"><a>Fabric JS (1.3.0)</a></li>
+                        <li id="font-awesome"><a>Font Awesome (4.7.0)</a></li>
+                    </ul>
+                    <ul>
+                        <li class="ldd-heading">J</li>
+                        <li id="jquery"><a>jQuery (latest)</a><span class="popular">Popular</span></li>
+                        <li id="jqueryui"><a>jQuery UI (latest)</a></li>
+                        <li id="jquerymobile"><a>jQuery Mobile (latest)</a></li>
+                        <li id="jquerytools"><a>jQuery Tools (1.2.7)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading no-border">K</li>
+                        <li id="kinetic"><a>Kinetic JS 4.7.3</a></li>
+                        <li id="knockout"><a>Knockout JS 3.0.0</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">M</li>
+                        <li id="modernizr"><a>Modernizr (latest)</a></li>
+                        <li id="mootools"><a>Moo Tools (latest)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">P</li>
+                        <li id="paper"><a>Paper JS (0.9.9)</a></li>
+                        <li id="processing"><a>Processing JS (1.4.1)</a></li>
+                        <li id="prototype"><a>Prototype JS (latest)</a></li>
+                        <li id="purecss"><a>Pure CSS (0.60)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">Q</li>
+                        <li id="qooxdoo"><a>Qooxdoo (3.0.1)</a></li>
+                    </ul>
+                    <ul>
+                        <li class="ldd-heading">R</li>
+                        <li id="raphael"><a>Raphael JS (2.1.4)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">S</li>
+                        <li id="scriptaculous"><a>Script.aculo.us (latest)</a></li>
+                        <li id="snapsvg"><a>Snap SVG (latest)</a></li>
+                        <li id="svg"><a>SVG JS (latest)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">T</li>
+                        <li id="three"><a>Three JS (latest)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">U</li>
+                        <li id="underscore"><a>Underscore JS (latest)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">W</li>
+                        <li id="webfontloader"><a>Web Font Loader (1.4.10)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">Y</li>
+                        <li id="yui"><a>YUI (3.13.0)</a></li>
+                        <li>&nbsp;</li>
+                        <li class="ldd-heading">Z</li>
+                        <li id="zepto"><a>Zepto (latest)</a></li>
+                    </ul>
+                    <!-- <div class="ldd-subfoot" style="background: #333 url(images/editor-bg.png) repeat-x; font-family: Oswald, Arial, sans-serif; font-size:15px; font-weight:300; ">Select a library from the list. You must have the <span style="color:#fff; border-radius:5px;background-color:#666666; padding:5px; ">&lt;head&gt;</span> tag in your HTML.<input type="button" id="add-jquery" class="jbutton" style="cursor:pointer;float:right; position:relative;top:-8px;left:10px;" value="Add jQuery"/></div>-->
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="code-format">
+        <a id="tidy"><span class="format" title="Tidy and auto-format HTML + CSS + JS code"></span></a>
+    </div>
+    <div id="download-code">
+        <a id="download"><span class="download-code" title="Download as a compressed (.ZIP) file"></span></a>
+    </div>
+    <div id="team-up">
+        <a id="collaborate"><span class="team-up" title="Collaborate in real-time"></span></a>
+    </div>
+    <div class="sidebar-container">
+        <ul class="sidebar-left">
+            <li class="active web-editor"><i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i><br>Web Editor</li>
+            <li class="css-explorer"><i class="fa fa-css3 fa-3x" aria-hidden="true"></i><br>CSS Explorer</li>
+            <li class="color-explorer"><i class="fa fa-tint fa-4x" aria-hidden="true"></i><br>Color Explorer</li>
+            <li class="vector-editor"><i class="fa fa-object-group fa-3x" aria-hidden="true"></i><br>Vector Graphics Editor</li>
+        </ul>
+    </div>
+    <div class="fake-line-3"></div>
+
+    <form action="https://liveweave.com/submit.php" method="post" id="myform">
+        <div class="pos-split-container">
+            <div id="splitContainer" class="jqx-reset jqx-splitter jqx-widget jqx-widget-content" style="width: 100%; height: 100%; background-color: rgb(51, 51, 51);">
+                <div class="jqx-widget-content jqx-splitter-panel jqx-reset jqx-splitter-panel-nested" style="left: 0px; top: 0px; height: 50%; width: 100%;">
+                    <div id="leftSplitter" class="jqx-splitter-nested jqx-reset jqx-splitter jqx-widget jqx-widget-content" style="width: 100%; height: 100%; background-color: rgb(51, 51, 51);">
+                        <div class="scroll-mode jqx-widget-content jqx-splitter-panel jqx-reset" style="left: 0px; top: 0px; width: 50%; height: 100%;">
+                            <textarea id="html-source" name="html-source" style="display: none;"></textarea><div class="CodeMirror CodeMirror-wrap cm-s-vscode-dark" style="background-color: rgb(34, 34, 34);"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 303px; left: 500.75px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 58px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 1554px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1" style="background: rgb(34, 34, 34);"><div class="CodeMirror-sizer" style="margin-left: 58px; min-height: 1553.6px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1; display: none;"><div class="CodeMirror-selected" style="position: absolute; left: 29.3125px; top: 966.4px; width: 628.688px; height: 16px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 982.4px; width: 654px; height: 28.8px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 1011.2px; width: 362.813px; height: 16px;"></div></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">1</div></div><pre><span class="cm-meta">&lt;!DOCTYPE html&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">2</div></div><pre><span class="cm-tag">&lt;html&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">3</div></div><pre><span class="cm-tag">&lt;head&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">4</div></div><pre><span class="cm-tag">&lt;title&gt;</span>más fea del mundo<span class="cm-tag">&lt;/title&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">5</div></div><pre><span class="cm-tag">&lt;/head&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">6</div></div><pre><span class="cm-tag">&lt;body&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">7</div></div><pre><span class="cm-comment">&lt;!-- Start your code here --&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">8</div></div><pre>&nbsp;</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">9</div></div><pre><span class="cm-tag">&lt;p&gt;</span> <span class="cm-tag">&lt;b&gt;</span> ¿Cómo te has sentido con no ir a la escuela de manera presencial? <span class="cm-tag">&lt;/b&gt;</span> </pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">10</div></div><pre>Mal. Me ha sido difícil organizar mis tiempos, poder prestar atención en clase desde una pantalla. <span class="cm-tag">&lt;/p&gt;</span> </pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">11</div></div><pre>  <span class="cm-tag">&lt;p&gt;</span> <span class="cm-tag">&lt;b&gt;</span>  Define diseño interactivo usando un dibujo sin palabras. Incluye tu dibujo en el documento. <span class="cm-tag">&lt;/b&gt;</span>  <span class="cm-tag">&lt;img</span> <span class="cm-attribute">src</span><span class="cm-equals">=</span><span class="cm-string">"https://static.wixstatic.com/media/9c706e_359daa816c104435abf16b4a244c3f61~mv2.png/v1/fill/w_630,h_382,al_c,usm_0.66_1.00_0.01/9c706e_359daa816c104435abf16b4a244c3f61~mv2.png"</span> <span class="cm-attribute">alt</span><span class="cm-equals">=</span><span class="cm-string">"Foto Farah"</span> <span class="cm-attribute">width</span><span class="cm-equals">=</span><span class="cm-string">"500"</span> <span class="cm-attribute">height</span><span class="cm-equals">=</span><span class="cm-string">"600"</span><span class="cm-tag">&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">12</div></div><pre><span class="cm-tag">&lt;/p&gt;</span> <span class="cm-tag">&lt;p&gt;</span> <span class="cm-tag">&lt;b&gt;</span> ¿Para hacer un sitio web se requiere saber de diseño interactivo? ¿Por qué? <span class="cm-tag">&lt;/b&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">13</div></div><pre>  Si, para poder diseñar la interfaz adecuada de acuerdo a las necesidades del sitio. <span class="cm-tag">&lt;p&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">14</div></div><pre>  <span class="cm-tag">&lt;/p&gt;</span> <span class="cm-tag">&lt;b&gt;</span> </pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">15</div></div><pre>¿Qué otros productos requieren de conocer sobre diseño interactivo?  <span class="cm-tag">&lt;/b&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">16</div></div><pre>Cualquier plataforma que vaya interactuar con un usuario.</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">17</div></div><pre><span class="cm-tag">&lt;/p&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">18</div></div><pre>  <span class="cm-tag">&lt;p&gt;</span> <span class="cm-tag">&lt;b&gt;</span> ¿Para qué sirve el body y el head en un documento de html? <span class="cm-tag">&lt;/b&gt;</span> </pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">19</div></div><pre><span class="cm-tag">&lt;P&gt;</span> La HEAD es la primera de las dos partes en que se estructura un documento HTML. En la HEAD reside información acerca del documento, y generalmente no se ve cuando se navega por él. En la HEAD se pone el elemento lleno <span class="cm-tag">&lt; TITLE&gt;</span> que es una breve descripción que identifica la página. <span class="cm-tag">&lt;P&gt;</span> El elemento body es el contenedor para todos los aspectos representables de un documento. Este es el lugar donde los autores arrojan todos los elementos y contenidos que sus visitantes alcanzarán. El elemento body es parte de la estructura básica de un documento.<span class="cm-tag">&lt;/P&gt;</span> <span class="cm-tag">&lt;p&gt;</span> <span class="cm-tag">&lt;b&gt;</span> ¿Son importantes las imágenes en el diseño interactivo? ¿Por qué? <span class="cm-tag">&lt;/b&gt;</span>  <span class="cm-tag">&lt;p&gt;&lt;/p&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">20</div></div><pre>Sí, porque dan una referencia visual de lo que se esta presentando.</pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">21</div></div><pre><span class="cm-tag">&lt;/p&gt;</span> </pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">22</div></div><pre>  <span class="cm-tag">&lt;img</span> <span class="cm-attribute">src</span><span class="cm-equals">=</span><span class="cm-string">"https://pbs.twimg.com/media/EVH8TTYUYAAcCLF?format=jpg&amp;name=large"</span> <span class="cm-attribute">alt</span><span class="cm-equals">=</span><span class="cm-string">"Foto Farah"</span> <span class="cm-attribute">width</span><span class="cm-equals">=</span><span class="cm-string">"500"</span> <span class="cm-attribute">height</span><span class="cm-equals">=</span><span class="cm-string">"600"</span><span class="cm-tag">&gt;</span> <span class="cm-tag">&lt;p&gt;&lt;/p&gt;</span> <span class="cm-tag">&lt;p&gt;</span> <span class="cm-tag">&lt;b&gt;</span> ¿Te imaginas la web sin links? ¿Se te ocurre otra forma de reemplazar esa funcionalidad? <span class="cm-tag">&lt;/b&gt;</span>  <span class="cm-tag">&lt;p&gt;&lt;/p&gt;</span></pre></div></div><div class="CodeMirror-cursor" style="left: 442.75px; top: 1257.6px; height: 16px; visibility: hidden;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none; visibility: hidden;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 1553.6px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 1553.6px;"><div class="CodeMirror-gutter CodeMirror-lint-markers" style="background: none; border: none;"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="background: none; border: none; width: 28px;"></div></div></div></div>
+                            <span class="html-logo" id="html-mode" style="display: block;"></span>
+                            <a id="fullscreen-html-toggle"><span class="fullscreen-small" id="fullscreen-html"></span></a>
+                        </div><div class="jqx-splitter-splitbar-vertical jqx-fill-state-normal" style="height: 100%; width: 5px; left: 726px; background-color: rgb(17, 17, 17); border-width: 1px; border-style: solid; border-color: rgb(34, 34, 34) rgb(34, 34, 34) rgb(51, 51, 51) rgb(51, 51, 51);"><div class="jqx-splitter-collapse-button-vertical jqx-fill-state-pressed" style="width: 5px; height: 45px; position: relative; top: 50%; left: 0px; margin-top: -23px; margin-left: 0px; display: none; background-color: rgb(68, 68, 68);"></div></div>
+                        <div class="scroll-mode jqx-widget-content jqx-splitter-panel jqx-reset" style="left: 733px; top: 0px; width: 49.5176%; height: 100%;">
+                            <textarea id="css-source" name="css-source" style="display: none;"></textarea><div class="CodeMirror CodeMirror-wrap cm-s-vscode-dark" style="background-color: rgb(34, 34, 34);"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 7.2px; left: 264.5px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 58px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1" style="background: rgb(34, 34, 34);"><div class="CodeMirror-sizer" style="margin-left: 58px; min-height: 30.4px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1; display: none;"></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">1</div></div><pre>.<span class="cm-tag">lw</span> { <span class="cm-variable">font-size</span>: <span class="cm-number">60px</span>; }</pre></div></div><div class="CodeMirror-cursor" style="left: 206.5px; top: 3.2px; height: 16px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 30.4px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 313px;"><div class="CodeMirror-gutter CodeMirror-lint-markers" style="background: none; border: none;"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="background: none; border: none; width: 28px;"></div></div></div></div>
+                            <span class="css-logo" id="css-mode" style="display: block;"></span>
+                            <!-- <i class="fa fa-2x fa-cog pos-fa-cog" title="Go to CSS3 Code Generator"></i> -->
+                            <a id="fullscreen-css-toggle"><span class="fullscreen-small" id="fullscreen-css"></span></a>
+                        </div>
+                    </div>
+                </div><div class="jqx-splitter-splitbar-horizontal jqx-fill-state-normal" style="width: 100%; height: 5px; top: 313px; background-color: rgb(17, 17, 17); border-width: 1px; border-style: solid; border-color: rgb(34, 34, 34) rgb(34, 34, 34) rgb(51, 51, 51) rgb(51, 51, 51);"><div class="jqx-splitter-collapse-button-horizontal jqx-fill-state-pressed" style="height: 5px; width: 45px; position: relative; left: 50%; top: 0px; margin-left: -23px; margin-top: 0px; display: none; background-color: rgb(68, 68, 68);"></div></div>
+                <div class="jqx-widget-content jqx-splitter-panel jqx-reset jqx-splitter-panel-nested" style="left: 0px; top: 320px; height: 48.8818%; width: 100%;">
+                    <div id="rightSplitter" class="jqx-splitter-nested jqx-reset jqx-splitter jqx-widget jqx-widget-content" style="width: 100%; height: 100%; background-color: rgb(34, 34, 34);">
+                        <div class="scroll-mode jqx-widget-content jqx-splitter-panel jqx-reset" style="left: 0px; top: 0px; width: 50%; height: 100%;"> <!-- js-panel class to offset scrollbar position -->
+                            <textarea id="js-source" name="js-source" style="display: none;"></textarea><div class="CodeMirror CodeMirror-wrap cm-s-vscode-dark CodeMirror-focused" style="background-color: rgb(34, 34, 34);"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 7.20001px; left: 272.938px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 58px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1" style="background: rgb(34, 34, 34);"><div class="CodeMirror-sizer" style="margin-left: 58px; min-height: 30.4px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1; display: none;"></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -58px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 23px; width: 20px;">1</div></div><pre><span class="cm-comment">// Write JavaScript here </span></pre></div></div><div class="CodeMirror-cursor" style="left: 214.938px; top: 3.20001px; height: 16px; visibility: hidden;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none; visibility: hidden;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 30.4px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 306px;"><div class="CodeMirror-gutter CodeMirror-lint-markers" style="background: none; border: none;"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="background: none; border: none; width: 28px;"></div></div></div></div>
+                            <span class="js-logo" id="js-mode" style="display: none;"></span>
+                            <a id="fullscreen-js-toggle"><span class="fullscreen-small" id="fullscreen-js"></span></a>
+                        </div><div class="jqx-splitter-splitbar-vertical jqx-fill-state-normal" style="height: 100%; width: 5px; left: 726px; background-color: rgb(17, 17, 17); border-width: 1px; border-style: solid; border-color: rgb(34, 34, 34) rgb(34, 34, 34) rgb(51, 51, 51) rgb(51, 51, 51);"><div class="jqx-splitter-collapse-button-vertical jqx-fill-state-pressed" style="width: 5px; height: 45px; position: relative; top: 50%; left: 0px; margin-top: -23px; margin-left: 0px; display: none; background-color: rgb(68, 68, 68);"></div></div>
+                        <div class="jqx-widget-content jqx-splitter-panel jqx-reset" style="left: 733px; top: 0px; width: 49.5176%; height: 100%;">
+                           <iframe id="preview" name="preview" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-modals allow-scripts" src="./El sitio más feo_files/saved_resource.html"></iframe>
+                            <a style="cursor:pointer;" title="Toggle full-screen"><span id="preview-mode"></span></a>
+                            <svg id="ruler" xmlns="http://www.w3.org/2000/svg"><g><rect class="ruler-tick" x="-200px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="-180px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="-160px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="-140px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="-120px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="-100px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="-80px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="-60px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="-40px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="-20px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="0px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="20px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="40px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="60px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="80px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="100px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="120px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="140px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="160px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="180px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="200px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="220px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="240px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="260px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="280px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="300px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="320px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="340px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="360px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="380px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="400px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="420px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="440px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="460px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="480px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="500px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="520px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="540px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="560px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="580px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="600px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="620px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="640px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="660px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="680px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="700px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="720px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="740px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="760px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="780px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="800px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="820px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="840px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="860px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="880px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="900px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="920px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="940px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="960px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="980px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1000px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1020px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1040px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1060px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1080px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1100px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1120px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1140px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1160px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1180px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1200px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1220px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1240px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1260px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1280px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1300px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1320px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1340px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1360px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1380px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1400px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1420px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1440px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1460px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1480px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1500px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1520px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1540px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1560px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick" x="1580px" y="0px" height="10px" width="1px"></rect><rect class="ruler-tick-long" x="-200px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="-100px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="0px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="100px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="200px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="300px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="400px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="500px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="600px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="700px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="800px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="900px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="1000px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="1100px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="1200px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="1300px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="1400px" y="0px" height="20px" width="1px"></rect><rect class="ruler-tick-long" x="1500px" y="0px" height="20px" width="1px"></rect><text class="rulez-text" x="-200px" y="25px" transform="rotate(0 -200 25)">-200</text><text class="ruler-text" x="-200px" y="25px" transform="rotate(0 -200 25)">-200</text><text class="ruler-text" x="-100px" y="25px" transform="rotate(0 -100 25)">-100</text><text class="ruler-text" x="0px" y="25px" transform="rotate(0 0 25)">0</text><text class="ruler-text" x="100px" y="25px" transform="rotate(0 100 25)">100</text><text class="ruler-text" x="200px" y="25px" transform="rotate(0 200 25)">200</text><text class="ruler-text" x="300px" y="25px" transform="rotate(0 300 25)">300</text><text class="ruler-text" x="400px" y="25px" transform="rotate(0 400 25)">400</text><text class="ruler-text" x="500px" y="25px" transform="rotate(0 500 25)">500</text><text class="ruler-text" x="600px" y="25px" transform="rotate(0 600 25)">600</text><text class="ruler-text" x="700px" y="25px" transform="rotate(0 700 25)">700</text><text class="ruler-text" x="800px" y="25px" transform="rotate(0 800 25)">800</text><text class="ruler-text" x="900px" y="25px" transform="rotate(0 900 25)">900</text><text class="ruler-text" x="1000px" y="25px" transform="rotate(0 1000 25)">1000</text><text class="ruler-text" x="1100px" y="25px" transform="rotate(0 1100 25)">1100</text><text class="ruler-text" x="1200px" y="25px" transform="rotate(0 1200 25)">1200</text><text class="ruler-text" x="1300px" y="25px" transform="rotate(0 1300 25)">1300</text><text class="ruler-text" x="1400px" y="25px" transform="rotate(0 1400 25)">1400</text><text class="ruler-text" x="1500px" y="25px" transform="rotate(0 1500 25)">1500</text></g></svg> 
+                            <span class="ruler-px"><label> pixels</label></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <input type="image" src="./El sitio más feo_files/save.svg" alt="Save" name="submit" id="submit" title="Save weave to cloud" class="save-button">                
+        <input type="text" name="dummy-title" id="dummy-title" value="">
+        <input type="text" name="dummy-layout" id="dummy-layout" value="1">
+        <input type="text" name="dummy-theme" id="dummy-theme" value="0">
+        <input type="text" name="dummy-id" id="dummy-id" value="">
+        <input type="text" name="dummy-privacy" id="dummy-privacy" value="0">
+    </form>
+
+    <div class="fake-line-1"></div>
+    <!-- <div class="fake-line-2"></div> -->
+
+    <div id="footer">
+
+        <ul class="links">
+            <li><a href="https://liveweave.com/about/index.html" target="_blank" title="About us"><span style="color:#00BBFF;">About</span></a>
+            </li>
+            <li><a href="https://liveweave.com/blog" target="_blank" title="Liveweave docs, resources, updates, tutorials &amp; more"><span style="color:#00BBFF;">Blog</span></a>
+            </li>
+            <li><a href="https://liveweave.com/blog/contact-us/" target="_blank" title="Contact us"><span style="color:#00BBFF;">Contact Us</span></a></li>
+            <!-- <li style="display:none;"><a href="https://liveweave.com/colorlist/" target="_blank" title="Liveweave Color Lab"><span
+                            style="color:#00BBFF;">Colorlist</span></a></li>-->
+            <li><a href="https://liveweave.com/blog/liveweave101/" target="_blank" title="Liveweave 101 and help"><span style="color:#00BBFF;">Help</span></a>
+            </li>
+            <li><a href="https://liveweave.com/blog/privacy-policy/" target="_blank" title="Privacy policy"><span style="color:#00BBFF;">Privacy</span></a>
+            </li>
+            <li><a href="https://liveweave.com/blog/licensing-terms-conditions/" target="_blank" title="Terms of service"><span style="color:#00BBFF;">Terms</span></a>
+            </li>
+            <li><a href="http://twitter.com/liveweave" target="_blank" title="Follow us on Twitter"><span class="icon-twitter"></span></a></li>
+        </ul>
+
+        <ul class="layout">
+            <label> Layout &nbsp;&nbsp; </label>
+            <li id="layout0" class="layout-selected"><a href="javascript:void(0)"><span class="layout0"></span></a>
+            </li>
+            <li id="layout1" class=""><a href="javascript:void(0)"><span class="layout1"></span></a>
+            </li>
+            <li id="layout2" class=""><a href="javascript:void(0)"><span class="layout2"></span></a></li>
+            <li id="layout3" class=""><a href="javascript:void(0)"><span class="layout3"></span></a></li>
+        </ul>
+
+        <ul id="footer-message">
+      
+        <!--
+            <li>
+                <span
+                    class="footer-message-content" style="color: white;background:#0066CC;">
+                <a href="https://liveweave.com/blog/2020/06/14/we-now-support-unlimited-private-weaves-for-registered-users/"
+                    target="_blank"><i class="fa fa-bullhorn" aria-hidden="true"></i> &nbsp; We now support unlimited "Private" weaves for all users! </a>
+                    <span class="footer-message-close" style="background:#0099FF;"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </span>
+            </li>
+        -->
+            <!--
+            <li>
+                <span class="footer-message-close" style="background:#8B0000;">
+                <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+                <span
+                    class="footer-message-content" style="color: white;background:#B22222;">
+                    ALERT! Database I/O operations have been temporarily disabled.
+                </span>
+            </li>
+            -->
+
+        </ul>
+
+        <ul class="full-screen-section">
+            <li>
+                <div id="preview-mode-toggle" class="full-screen-logo"></div>
+            </li>
+        </ul>
+    </div>
+<script src="./El sitio más feo_files/togetherjs-min.js.descarga"></script>
+<script type="text/javascript" src="./El sitio más feo_files/main.js.descarga"></script><select id="cm-suggestions" style="left: 614.5px; top: 253.8px; display: none;" size="2"><option data-action="" value="&lt;/video&gt;">video</option></select>
+<script type="text/javascript" src="./El sitio más feo_files/bind.history.js.descarga"></script>
+
+
+
+<div id="tiptip_holder" style="max-width: 200px; margin: 692px 0px 0px 1278px; display: none;" class="tip_top"><div id="tiptip_arrow" style="margin-left: 79px; margin-top: 26px;"><div id="tiptip_arrow_inner"></div></div><div id="tiptip_content">HTML/CSS side-by-side layout</div></div><div id="alertify-cover" class="alertify-cover alertify-cover-hidden"></div><section id="alertify" class="alertify alertify-hidden"></section><section id="alertify-logs" class="alertify-logs alertify-logs-hidden"></section></body></html>

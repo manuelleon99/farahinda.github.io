@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>HTML, CSS and JavaScript demo</title>
-<link type="text/css" rel="stylesheet" href="css/style.css"/>
-</head>
-<body>
-<!-- Start your code here -->
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
 
-<p class="lw">Hello Weaver!</p>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
-<!-- End your code here -->
-<script type="text/javascript" src="js/script.js"></script>
-</body>
-</html>
+    <body>
+      
+ 
+  <i class="material-icons">tree</i>
+       <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">account_box</i>Perfil de Usuario</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">mood_bad</i>Frustraciones</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Moticaciones</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+      
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script type="text/javascript">
+ document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+        
+      </script>
+    </body>
+  </html>
